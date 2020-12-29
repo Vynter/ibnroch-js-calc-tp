@@ -1,21 +1,7 @@
 var resultat = document.querySelector("#resultat");
-var operator = ["*", "-", "/", "+", "(", ")"];
-var length = resultat.value.length;
 
-function addNbr(n) {
-  //vérification avant la saisi pour éviter des erreurs qui peuvent étre provoqué par l'utilisateur
-  if (resultat.value[length - 1] != ")") {
-    if (resultat.value[0] == "0") {
-      resultat.value = n;
-    } else {
-      resultat.value += n;
-    }
-  } else {
-    alert("Veuillez choisir un opérator !");
-  }
-}
-
-function addOpe(n) {
+function addN(n) {
+  //afin d'éviter une saisi de ce type 012345
   if (resultat.value[0] == "0") {
     resultat.value = n;
   } else {

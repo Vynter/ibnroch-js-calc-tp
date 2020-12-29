@@ -3,6 +3,13 @@
 <head>
     <meta charset="utf-8">
     <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
         td {
             /* top right bottom left */
             padding: 10px 10px 10px 10px;
@@ -54,7 +61,7 @@
             </thead>
             <tfoot>
                 <tr>
-                    <td><input type="button" value="+" onclick="addOpe('+')"></td>
+                    <td><input type="button" value="+" onclick="addN('+')"></td>
                     <td>
                         <input type="button" value="<-X" onclick="del()">
                         <input type="reset" value="CE" onclick="res()">
@@ -64,29 +71,29 @@
             </tfoot>
             <tbody>
                 <tr>
-                    <td><input type="button" value="7" onclick="addNbr(7)"></td>
-                    <td><input type="button" value="8" onclick="addNbr(8)"></td>
-                    <td><input type="button" value="9" onclick="addNbr(9)"></td>
+                    <td><input type="button" value="7" onclick="addN(7)"></td>
+                    <td><input type="button" value="8" onclick="addN(8)"></td>
+                    <td><input type="button" value="9" onclick="addN(9)"></td>
                 </tr>
                 <tr>
-                    <td><input type="button" value="4" onclick="addNbr(4)"></td>
-                    <td><input type="button" value="5" onclick="addNbr(5)"></td>
-                    <td><input type="button" value="6" onclick="addNbr(6)"></td>
+                    <td><input type="button" value="4" onclick="addN(4)"></td>
+                    <td><input type="button" value="5" onclick="addN(5)"></td>
+                    <td><input type="button" value="6" onclick="addN(6)"></td>
                 </tr>
                 <tr>
-                    <td><input type="button" value="1" onclick="addNbr(1)"></td>
-                    <td><input type="button" value="2" onclick="addNbr(2)"></td>
-                    <td><input type="button" value="3" onclick="addNbr(3)"></td>
+                    <td><input type="button" value="1" onclick="addN(1)"></td>
+                    <td><input type="button" value="2" onclick="addN(2)"></td>
+                    <td><input type="button" value="3" onclick="addN(3)"></td>
                 </tr>
                 <tr>
-                    <td><input type="button" value="(" onclick="addOpe('(')"></td>
-                    <td><input type="button" value="0" onclick="addNbr(0)"></td>
-                    <td><input type="button" value=")" onclick="addOpe(')')"></td>
+                    <td><input type="button" value="(" onclick="addN('(')"></td>
+                    <td><input type="button" value="0" onclick="addN(0)"></td>
+                    <td><input type="button" value=")" onclick="addN(')')"></td>
                 </tr>
                 <tr>
-                    <td><input type="button" value="-" onclick="addOpe('-')"></td>
-                    <td><input type="button" value="/" onclick="addOpe('/')"></td>
-                    <td><input type="button" value="*" onclick="addOpe('*')"></td>
+                    <td><input type="button" value="-" onclick="addN('-')"></td>
+                    <td><input type="button" value="/" onclick="addN('/')"></td>
+                    <td><input type="button" value="*" onclick="addN('*')"></td>
                 </tr>
 
             </tbody>
